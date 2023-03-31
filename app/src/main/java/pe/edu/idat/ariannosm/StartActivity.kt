@@ -10,21 +10,26 @@ class StartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStartBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_start)
+        setContentView(binding.root)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction().replace(R.id.fl_navigation, HomeFragment()).commit()
+        }
         setBottomNavigation()
     }
 
     private fun setBottomNavigation() {
         binding.bnvNavigation.setOnItemSelectedListener { menuItem ->
-            val fragment:Fragment = when (menuItem.itemId){
+            val fragment: Fragment = when (menuItem.itemId){
                 R.id.nav_home ->{
                     HomeFragment()
+                }
+                R.id.nav_list ->{
+                    ListFragment()
                 }
                 else ->{HomeFragment()}
             }
             supportFragmentManager.beginTransaction().replace(R.id.fl_navigation, fragment).commit()
             return@setOnItemSelectedListener true
         }
-        binding.bnvNavigation.selectedItemId = R.id.nav_home
     }
 }
