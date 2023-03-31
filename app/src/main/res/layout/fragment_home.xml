@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:textSize="30sp"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="zombie_hand.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual de Usuario"
+            android:textSize="20sp"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- El aplicativo listara a los iconicos personajes de TWD."
+            android:textSize="15sp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/nunito_italic"
+            android:gravity="bottom"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Al tocar un personaje se mostrara los detalles de este mismo."
+            android:textSize="15sp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/nunito_italic"
+            android:gravity="bottom"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- En el apartado de información se visualizara datos del desarrollador."
+            android:textSize="15sp"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/nunito_italic"
+            android:gravity="bottom"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
