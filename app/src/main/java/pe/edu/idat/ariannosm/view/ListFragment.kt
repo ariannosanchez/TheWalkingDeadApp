@@ -1,4 +1,4 @@
-package pe.edu.idat.ariannosm
+package pe.edu.idat.ariannosm.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

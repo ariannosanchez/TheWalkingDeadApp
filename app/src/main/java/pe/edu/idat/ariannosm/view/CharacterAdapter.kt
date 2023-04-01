@@ -1,4 +1,4 @@
-package pe.edu.idat.ariannosm
+package pe.edu.idat.ariannosm.view
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
@@ -8,12 +8,12 @@ import pe.edu.idat.ariannosm.model.Character
 
 class CharacterAdapter(val characters: List<Character>): RecyclerView.Adapter<CharacterAdapter.VHAdapter>(){
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterAdapter.VHAdapter {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VHAdapter {
         val binding = CharacterItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return VHAdapter(binding)
     }
 
-    override fun onBindViewHolder(holder: CharacterAdapter.VHAdapter, position: Int) {
+    override fun onBindViewHolder(holder: VHAdapter, position: Int) {
         holder.bind(characters[position])
     }
 
@@ -24,6 +24,7 @@ class CharacterAdapter(val characters: List<Character>): RecyclerView.Adapter<Ch
             binding.txtNombre.text = character.Name
             binding.txtGender.text = character.Gender
             binding.txtStatus.text = character.Status
+            binding.txtEthnicity.text = character.Ethnicity
             Glide
                 .with(binding.root)
                 .load(character.Image)

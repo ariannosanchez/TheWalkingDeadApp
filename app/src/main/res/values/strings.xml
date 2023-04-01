@@ -11,4 +11,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tv_titulo">Lista de personajes</string>
     <string name="txtdetalle">Detalle del Personaje</string>
+    <!--Información de la aplicación-->
+    <string name="DesarrolladorTXT">Desarrollado por: Arianno Sanchez Mitma</string>
+    <string name="VersionTXT">Versión 1.0</string>
+    <string name="tvmanual1">Manual de Usuario</string>
+    <string name="tvmanual2">- El aplicativo listara a los iconicos personajes de TWD.</string>
+    <string name="txtmanual3">- En el apartado de información se visualizara datos del desarrollador.</string>
 </resources>

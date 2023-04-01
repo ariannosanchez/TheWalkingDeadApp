@@ -1,21 +1,20 @@
-package pe.edu.idat.ariannosm
+package pe.edu.idat.ariannosm.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import pe.edu.idat.ariannosm.databinding.FragmentDetailBinding
-import pe.edu.idat.ariannosm.databinding.FragmentListBinding
+import pe.edu.idat.ariannosm.databinding.FragmentInfoBinding
 
-
-class DetailFragment : Fragment() {
-    private lateinit var binding: FragmentDetailBinding
+class InfoFragment : Fragment() {
+    private lateinit var binding:FragmentInfoBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentDetailBinding.inflate(inflater, container, false)
+        binding = FragmentInfoBinding.inflate(inflater,container, false)
         return binding.root
     }
+
 }

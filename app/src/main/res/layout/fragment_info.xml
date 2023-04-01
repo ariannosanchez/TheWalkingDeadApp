@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.HomeFragment">
+    tools:context=".view.InfoFragment">
+
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -13,9 +14,10 @@
         android:padding="10dp">
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inicio"
+            android:text="Información"
             android:textSize="30sp"
             android:textColor="@color/secondary"
             android:fontFamily="@font/nunito_bold"
@@ -26,37 +28,29 @@
             android:layout_height="500dp"
             android:layout_gravity="center"
             app:lottie_imageAssetsFolder="assets"
-            app:lottie_fileName="zombie_hand.json"
+            app:lottie_fileName="developer.json"
             app:lottie_loop="true"
             app:lottie_autoPlay="true"/>
 
         <TextView
+            android:text="@string/DesarrolladorTXT"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_italic"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tvmanual1"
-            android:textSize="20sp"
-            android:textColor="@color/secondary"
-            android:fontFamily="@font/nunito_bold"
-            android:gravity="center"/>
+            android:layout_height="wrap_content"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tvmanual2"
-            android:textSize="15sp"
-            android:textColor="@color/primary"
+            android:text="@string/VersionTXT"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/nunito_italic"
-            android:gravity="bottom"/>
-        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/txtmanual3"
-            android:textSize="15sp"
-            android:textColor="@color/primary"
-            android:fontFamily="@font/nunito_italic"
-            android:gravity="bottom"/>
+            android:layout_height="wrap_content"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
 </FrameLayout>

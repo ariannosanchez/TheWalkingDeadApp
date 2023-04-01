@@ -4,9 +4,9 @@ data class Character(
     val Name : String,
     val Gender: String,
     val Image: String,
-    val hair: String,
-    val firstApparence: String,
-    val lastApparence: String,
+    val Hair: String,
+    val FirstApparence: String,
+    val LastApparence: String,
     val Status: String,
-    val ethnicity: String
+    val Ethnicity: String
 )

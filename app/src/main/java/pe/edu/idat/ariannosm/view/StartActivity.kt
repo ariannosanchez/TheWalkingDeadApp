@@ -1,8 +1,9 @@
-package pe.edu.idat.ariannosm
+package pe.edu.idat.ariannosm.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import pe.edu.idat.ariannosm.R
 import pe.edu.idat.ariannosm.databinding.ActivityStartBinding
 
 class StartActivity : AppCompatActivity() {
@@ -26,7 +27,12 @@ class StartActivity : AppCompatActivity() {
                 R.id.nav_list ->{
                     ListFragment()
                 }
-                else ->{HomeFragment()}
+                R.id.nav_info ->{
+                    InfoFragment()
+                }
+                else ->{
+                    HomeFragment()
+                }
             }
             supportFragmentManager.beginTransaction().replace(R.id.fl_navigation, fragment).commit()
             return@setOnItemSelectedListener true
